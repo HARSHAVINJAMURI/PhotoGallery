@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PHOTO PASSION</title>
+        <style>
+            *{ 
+                margin:0; 
+                padding:0;
+                font-family:'Poppins', sans-serif;
+                box-sizing: border-box;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                background:#080808;
+                color:#fff;
+            }
+            #header{
+                width:100%;
+                height:100vh;
+                background-image:black;
+                background-size:cover;
+            }
+            .container{
+                padding: 10px 10%;
+            }
+            /*---------Portfolio Section----------*/
+            #portfolio{
+            padding: 50px 0;
+            }
+            .sub-title{
+            font-family:courier;
+            }
+            .work-list{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+            }
+            .work{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            }
+            .work img{
+            width:100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+            }
+            .work:hover img{
+            transform: scale(1.1);
+            }
+            .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            }
+            .enlarged-image {
+                max-width: 80%;
+                max-height: 80%;
+                cursor: pointer;
+            }
+            .close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #fff;
+                font-size: 60px;
+                cursor: pointer;
+            } 
+            #bg-music {
+                display: none;
+            }
+            .work-list{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+            }
+            .work{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            }
+            .work img{
+            width:100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+            }
+            .work:hover img{
+            transform: scale(1.1);
+            }
+            .copyright{
+            text-align:center;
+            padding: 25px 0;
+            background: #262626;
+            width:100%;
+            margin-top: 20px;
+            font-weight: 300;
+            }
+            .copyright i{
+            color:#ff004f;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/7e07a3bf71.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+        <!----------------Portfolio Section---------------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">MY WORK</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-4.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-5.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-6.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-7.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-8.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-9.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-10.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-11.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-12.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-13.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-14.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-15.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-16.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-17.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-18.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-19.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-20.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-21.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-22.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-23.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-24.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-25.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-26.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-27.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-28.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-29.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-30.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-31.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-32.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-33.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-34.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-35.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-36.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-37.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-38.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-39.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-40.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-41.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-42.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-43.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-44.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-45.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-46.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-47.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-48.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-49.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-50.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-51.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-52.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-53.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-54.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-55.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-56.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-57.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-58.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-59.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-60.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-61.jpg"> 
+                    </div>
+                    <div class="work">
+                        <img src="images/work-62.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-63.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-64.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-65.gif">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-66.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-67.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-68.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-69.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-70.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-71.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-72.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-100.jpg" alt="Panorama Photo" class="panorama-image">
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <img src="" class="enlarged-image" id="enlarged-image">
+            <span class="close-button" onclick="closeImage()">&times;</span>
+        </div>
+        <audio id="bg-music" autoplay loop>
+            <source src="Audio.mp4" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="copyright">
+            <p>copyright © <b>Harsha-Vinjamuri</b> Made this with <i class="fas fa-heart"></i></p>
+        </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                function transitionToImage(largeImageSrc) {
+                    $(".large-image").fadeOut(200, function() {
+                        $(this).attr("src", largeImageSrc).fadeIn(200);
+                    });
+                }
+                $(".thumbnail").click(function() {
+                    const largeImageSrc = $(this).data("large");
+                    transitionToImage(largeImageSrc);
+                });
+            });
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            var isOpen = false;
+            function toggleMenu() {
+                if (!isOpen) {
+                    sidemenu.style.right = "0";
+                    isOpen = true;
+                } else {
+                    sidemenu.style.right = "-200px";
+                    isOpen = false;
+                }
+            }
+        </script>
+        <script>
+            document.querySelectorAll('.work img').forEach(item => {
+                item.addEventListener('click', event => {
+                    const src = event.target.src;
+                    document.getElementById('enlarged-image').src = src;
+                    document.getElementById('overlay').style.display = 'flex';
+                });
+            });
+            function closeImage() {
+                document.getElementById('overlay').style.display = 'none';
+            }
+        </script>
+         <script>
+            window.onload = function() {
+                // Get the audio element
+                var audio = document.getElementById("bg-music");
+                // Play the audio
+                audio.play();
+                // Make the audio element visible
+                audio.style.display = "block";
+            };
+        </script>
+    </body>
+</html>
